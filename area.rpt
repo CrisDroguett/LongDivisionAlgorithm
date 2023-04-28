@@ -1,0 +1,47 @@
+# Noah Fishman, Cris Droguett EECE 573-01
+
+File created on Thursday 12/15/2022, 19:33:37
+
+Slice LUTs used: 108
+
+Primitives Table
+-------------
+
++----------+------+---------------------+
+| Ref Name | Used | Functional Category |
++----------+------+---------------------+
+| FDRE     |  106 |        Flop & Latch |
+| IBUF     |   67 |                  IO |
+| OBUF     |   66 |                  IO |
+| LUT4     |   40 |                 LUT |
+| LUT6     |   39 |                 LUT |
+| LUT5     |   39 |                 LUT |
+| LUT3     |   32 |                 LUT |
+| CARRY4   |   12 |          CarryLogic |
+| LUT2     |    6 |                 LUT |
+| LDCE     |    6 |        Flop & Latch |
+| FDSE     |    2 |        Flop & Latch |
+| LUT1     |    1 |                 LUT |
+| BUFG     |    1 |               Clock |
++----------+------+---------------------+
+
+
+
+Slice Logic Distribution Table
+--------------
+
++-------------------------+------+-------+------------+-----------+-------+
+|        Site Type        | Used | Fixed | Prohibited | Available | Util% |
++-------------------------+------+-------+------------+-----------+-------+
+| Slice LUTs*             |  108 |     0 |          0 |     20800 |  0.52 |
+|   LUT as Logic          |  108 |     0 |          0 |     20800 |  0.52 |
+|   LUT as Memory         |    0 |     0 |          0 |      9600 |  0.00 |
+| Slice Registers         |  114 |     0 |          0 |     41600 |  0.27 |
+|   Register as Flip Flop |  108 |     0 |          0 |     41600 |  0.26 |
+|   Register as Latch     |    6 |     0 |          0 |     41600 |  0.01 |
+| F7 Muxes                |    0 |     0 |          0 |     16300 |  0.00 |
+| F8 Muxes                |    0 |     0 |          0 |      8150 |  0.00 |
++-------------------------+------+-------+------------+-----------+-------+
+* Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
+
+
